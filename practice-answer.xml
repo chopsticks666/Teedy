@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Custom PMD ruleset including only the specified rules: Lines of code (LoC), Cyclomatic Complexity (CC), Weighted Methods per Class (WMC), Coupling Between Objects (CBO), Lack of Cohesion in Methods (LCOM)
+    </description>
+
+    <!-- Lines of code (LoC) -->
+    <rule ref="category/java/codestyle.xml/ExcessiveMethodLength"/>
+
+<!--    &lt;!&ndash; Cyclomatic Complexity (CC) &ndash;&gt;-->
+<!--    <rule ref="category/java/codestyle.xml/CyclomaticComplexity"/>-->
+
+<!--    &lt;!&ndash; Weighted Methods per Class (WMC) &ndash;&gt;-->
+<!--    <rule ref="category/java/design.xml/ExcessiveClassLength"/>-->
+
+<!--    &lt;!&ndash; Coupling Between Objects (CBO) &ndash;&gt;-->
+<!--    <rule ref="category/java/design.xml/CouplingBetweenObjects"/>-->
+
+<!--    &lt;!&ndash; Lack of Cohesion in Methods (LCOM) &ndash;&gt;-->
+<!--    <rule ref="category/java/design.xml/LackOfCohesion"/>-->
+
+
+    <description>
+        My custom rules
+    </description>
+
+    <rule ref="category/java/design.xml/NcssCount" />
+
+    <rule ref="category/java/design.xml/CyclomaticComplexity" />
+
+    <rule ref="category/java/design.xml/GodClass" />
+
+    <rule ref="category/java/design.xml/CouplingBetweenObjects" />
+
+
+
+
+
+
+
+</ruleset>
